@@ -11,7 +11,6 @@ class Solution {
                 }
             }
             if(flag){
-                System.out.println(words[i]);
                 freq += 1;
             }
         }
