@@ -9,6 +9,5 @@ class Solution {
             ptrf += 1;
             ptre -= 1;
         }
-        System.out.println(s.toString());
     }
 }
