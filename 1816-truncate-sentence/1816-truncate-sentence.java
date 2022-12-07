@@ -1,12 +1,17 @@
 class Solution {
     public String truncateSentence(String s, int k) {
-        String[] str = s.split(" ");
+        String[] strArray = s.split(" ");
+        System.out.println(Arrays.toString(strArray));
         StringBuilder strb = new StringBuilder();
-        int i = 0;
-        for(i=0; i<k-1; i++){
-            strb.append(str[i]+" ");
+        for(int i=0; i<k; i++){
+            if(i == k-1){
+                strb.append(strArray[i]);
+            }else{
+                strb.append(strArray[i]+" ");
+            }
         }
-        strb.append(str[i]);
-        return strb.toString();
+        System.out.println(strb);
+        return (strb.toString());
     }
+    
 }
