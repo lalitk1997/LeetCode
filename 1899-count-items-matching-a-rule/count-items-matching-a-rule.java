@@ -4,7 +4,7 @@ class Solution {
         
         for(int i=0; i<items.size(); i++){
             if( ( ruleKey.equals("type") ) && ( ruleValue.equals((items.get(i).get(0))) ) ){
-                System.out.println(((items.get(0)).get(0)));
+                //System.out.println(((items.get(0)).get(0)));
                 ans += 1;
                 continue;
             }
