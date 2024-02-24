@@ -5,10 +5,10 @@ class Solution {
         for(int i=0; i<nums.length; i++){
             sumNum += nums[i];
             sumDigit += sumDigitFunc(nums[i]);
-            System.out.println(sumDigitFunc(nums[i]));
+            // System.out.println(sumDigitFunc(nums[i]));
         }
-        System.out.println(sumNum);
-        System.out.println(sumDigit);
+        // System.out.println(sumNum);
+        // System.out.println(sumDigit);
         return Math.abs(sumNum - sumDigit);
     }
 
