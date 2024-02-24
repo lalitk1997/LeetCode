@@ -1,12 +1,28 @@
 class Solution {
     public boolean digitCount(String num) {
+
+        int[] numsArr = new int[10];
+
+        for(int i=0; i<num.length(); i++){
+            int idx = Integer.valueOf(num.charAt(i)) - '0';
+            numsArr[idx]++;
+        }
+        // System.out.println(Arrays.toString(numsArr));
+        // return false;
+        for(int i=0; i<num.length(); i++){
+            int numTemp = i;
+            if(numsArr[numTemp] != (Integer.valueOf(num.charAt(i)) - '0')){
+                return false;
+            }
+        }
+        return true;
+
+        /*
+        // Un-optimized
         int[] intArr = new int[num.length()];
         for(int i=0; i<intArr.length; i++){
             intArr[i] = Integer.valueOf(num.charAt(i)) - 48;
         }
-        //System.out.println(Arrays.toString(intArr));
-        //return false;
-        //Arrays.sort(intArr);
         for(int i=0; i<num.length(); i++){
             int tempNum = i;
             int freq = Integer.valueOf(num.charAt(i)) - 48;
@@ -22,5 +38,6 @@ class Solution {
                 return false;
         }
         return true;
+        **/
     }
 }
