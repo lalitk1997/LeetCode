@@ -5,7 +5,6 @@ class Solution {
             if(maxEle < nums[i])
                 maxEle = nums[i];
         }
-        System.out.println(maxEle);
         int sumMax = 0;
         for(int i=0; i<k; i++){
             if(i==0)
