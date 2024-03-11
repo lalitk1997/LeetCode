@@ -13,10 +13,7 @@ class Solution {
             else
                 maxEle = maxEle + (1);
             sumMax += maxEle;
-            //System.out.println("maxEle: "+maxEle);
-            //System.out.println("sumMax: "+sumMax);
         }
-        //System.out.println("sumMax: "+sumMax);
         return sumMax;
     }
 }
